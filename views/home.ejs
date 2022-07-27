@@ -1,0 +1,18 @@
+<!--Header-->
+<%- include('partials/header.ejs'); %> 
+
+<!--Content-->
+<h1>Home</h1>
+<p><%= startText %></p>
+<% postsArray.forEach(function(post){ %>
+    <div class = "item">
+        <h1><%= post.title %></h1>
+        <p><%= post.content %></p>
+    </div>
+<% }) %>
+
+
+
+
+<!--Footer-->
+<%- include('partials/footer.ejs'); %> 
